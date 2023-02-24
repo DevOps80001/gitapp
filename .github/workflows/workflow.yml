@@ -1,4 +1,4 @@
-﻿name: PipeLineWorkFlow
+﻿name: PipelineWorkFlow
 
 on:
     push:
@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Azure Pipelines Action
-          uses: Azure/pipeline@v1
+          uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://dev.azure.com/hossamtaha18/AgileProject
             azure-pipeline-name: 'webapp'
